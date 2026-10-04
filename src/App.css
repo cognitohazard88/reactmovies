@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color:rgb(83, 96, 108);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#searchBar{
+  width: 100%;
+  height: fit-content;
+  right: 0;
+}
+
+#searchBar > div{
+  margin: 20px;
+  display: inline-block;
+  position: sticky;
+  top: 0;
+}
+
+.seatTaken{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 5px;
+}
+
+.seatAvailable{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: green;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.seatChosen{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: deepskyblue;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.seatGuide{
+  height: 15px;
+  width: 15px;
+}
+
+.formDiv{
+  background-color:lightslategray;
+  height: 500px;
+  width: 600px;
+  padding: 20px;
+  margin-left: 25%;
+  border: 2px solid black;
+}
+
+.movieDiv{
+  width: 250px;
+  height: auto;
+  max-height: 500px;
+  padding: 20px;
+  border: 2px solid black;
+  font-size: 15px;
+  font-family: Arial;
+  margin: 20px;
+  display: inline-block;
+  overflow: auto;
+  background-color: rgb(152, 165, 177);
+}
+
+.moviePoster{
+  width: inherit;
+}
+
+.movieTitle{
+  font-size: 20px;
+}
+
+.inlineBlock>*{
+  display: inline-block;
+}
+.centerItems{
+  justify-content: center;
+  align-items: center;
+}
+.centerItems>*{
+  margin: 5px;
+}
+.floatLeft{
+  float: left;
+  margin-right: 15px;
+}
+.reservationForm>*{
+  margin: 10px;
+  margin-right: 10px;
+}
+.hint{
+  color: dimgrey;
+}
+.summary{
+  height: 250px;
+}
